@@ -54,14 +54,19 @@ body {
   flex-direction: column;
   position: relative;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: transform 2s ease 0s;
+  -webkit-transition: transform 2s ease 0s;
   animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
   border-radius: 10px;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.right > img {
-  transform: rotate(180deg) rotateY(1deg);
+.back {
+  transform: translatez(-1px);
+  -webkit-transform: translatez(-1px);
 }
 
 .front,
@@ -70,7 +75,6 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   position: absolute;
-  transform: rotateY(1deg);
 }
 
 h2 {
@@ -284,17 +288,11 @@ embed {
   .completed .img-group > img {
     width: 400px;
     height: 400px;
-    display: block;
-    border-radius: 20px;
   }
 
   img.auspicious-word {
-    position: absolute;
     width: 300px;
     height: 300px;
-    z-index: 9999999;
-    opacity: 0;
-    animation: text-animation 3s forwards;
   }
 
   img.auspicious-word {
@@ -319,17 +317,11 @@ embed {
   .completed .img-group > img {
     width: 300px;
     height: 400px;
-    display: block;
-    border-radius: 20px;
   }
 
   img.auspicious-word {
-    position: absolute;
     width: 200px;
     height: 200px;
-    z-index: 9999999;
-    opacity: 0;
-    animation: text-animation 3s forwards;
   }
 
   img.auspicious-word {

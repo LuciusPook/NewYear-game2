@@ -41,7 +41,7 @@ function flip() {
   }
 
   if (section.firstElementChild.textContent === "陽" && section.lastElementChild.textContent === "陽") {
-    result.innerText = "陽筊"
+    result.innerText = "笑筊"
     result.style.opacity = "0"
   }
 
@@ -78,6 +78,8 @@ function resultAnswer() {
 function complete() {
   if (result.textContent === "聖筊") {
     completed.classList.remove("d-none")
+    leftCard.style.opacity = "0"
+    rightCard.style.opacity = "0"
   }
 }
 
