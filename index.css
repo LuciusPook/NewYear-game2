@@ -202,10 +202,11 @@ h2 {
 }
 
 .completed .img-group > img {
-  width: 400px;
-  height: 500px;
+  width: 1000px;
+  height: 470px;
   display: block;
   border-radius: 20px;
+  visibility: hidden;
 }
 
 .completed .img-group {
@@ -214,16 +215,16 @@ h2 {
 
 img.auspicious-word {
   position: absolute;
-  width: 400px;
+  width: 900px;
   height: 400px;
   z-index: 9999999;
   opacity: 0;
-  animation: text-animation 3s forwards;
+  animation: text-animation 1s forwards;
 }
 
 img.auspicious-word {
-  top: 20px;
-  left: 20px;
+  top: 30px;
+  left: 50px;
 }
 
 button {
@@ -286,18 +287,18 @@ embed {
   }
 
   .completed .img-group > img {
-    width: 400px;
+    width: 900px;
     height: 400px;
   }
 
   img.auspicious-word {
-    width: 300px;
-    height: 300px;
+    width: 800px;
+    height: 350px;
   }
 
   img.auspicious-word {
     top: 40px;
-    left: 40px;
+    left: 50px;
   }
   
 }
@@ -314,18 +315,23 @@ embed {
     width: 100%;
   }
 
+  h2 {
+      font-size: 35px;
+      margin: auto 5px;
+    }
+
   .completed .img-group > img {
-    width: 300px;
+    width: 400px;
     height: 400px;
   }
 
   img.auspicious-word {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
   }
 
   img.auspicious-word {
-    top: 50px;
-    left: 50px;
+    top: 80px;
+    left: 25px;
   }
 }
