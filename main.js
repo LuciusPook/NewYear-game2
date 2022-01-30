@@ -6,6 +6,7 @@ let result = document.querySelector(".result");
 let completed = document.querySelector(".completed")
 let tryAgain = document.querySelector("button")
 let fontGroup = document.querySelector(".group")
+let title = document.querySelector(".title")
 
 let arr = ["https://i.ibb.co/2PLCRCs/1.jpg",
   "https://i.ibb.co/CM5RGjs/2.jpg",
@@ -47,9 +48,9 @@ function flip() {
   }
 
   if ((rotY / 180) % 2 === 0) {
-    section.lastElementChild.innerText = "陰";
-  } else {
     section.lastElementChild.innerText = "陽";
+  } else {
+    section.lastElementChild.innerText = "陰";
   }
 
   if (button.checked) {
@@ -100,8 +101,18 @@ function complete() {
   }
 }
 
+(function playAudio() {
+  const audio = document.createElement("audio")
+  audio.src = "pongpong.mp3"
+  audio.play()
+})()
+
 button.addEventListener("click", flip);
 
 tryAgain.addEventListener('click', () => {
   window.location.reload()
 })
+
+setTimeout(function () {
+  title.classList.add("d-none")
+}, 3000)
