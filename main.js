@@ -101,7 +101,7 @@ function complete() {
   }
 }
 
-(function playAudio() {
+window.onload = (function playAudio() {
   const audio = document.createElement("audio")
   audio.src = "pongpong.mp3"
   audio.play()
