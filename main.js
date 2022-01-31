@@ -105,6 +105,11 @@ function complete() {
   const audio = document.createElement("audio")
   audio.src = "pongpong.mp3"
   audio.play()
+
+  if (audio.pause) {
+    audio.pause = false,
+      audio.play()
+  }
 })()
 
 button.addEventListener("click", flip);
