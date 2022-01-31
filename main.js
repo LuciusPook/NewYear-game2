@@ -104,12 +104,8 @@ function complete() {
 window.onload = (function playAudio() {
   const audio = document.createElement("audio")
   audio.src = "pongpong.mp3"
+  audio.load()
   audio.play()
-
-  if (audio.pause) {
-    audio.pause = false,
-      audio.play()
-  }
 })()
 
 button.addEventListener("click", flip);
